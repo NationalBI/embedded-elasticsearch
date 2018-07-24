@@ -14,7 +14,7 @@ apply plugin: 'groovy'
 apply plugin: 'io.codearte.nexus-staging'
 
 project.group = 'pl.allegro.tech'
-project.version = scmVersion.version
+project.version = '2.7.99-SNAPSHOT'
 jar.baseName = 'embedded-elasticsearch'
 
 dependencies {
@@ -44,12 +44,6 @@ modifyPom {
         description 'Tool that ease up creation of integration tests with Elasticsearch'
         url 'https://github.com/allegro/embedded-elasticsearch'
         inceptionYear '2016'
-
-        scm {
-            url 'https://github.com/allegro/embedded-elasticsearch'
-            connection 'scm:git@github.com:allegro/embedded-elasticsearch.git'
-            developerConnection 'scm:git@github.com:allegro/embedded-elasticsearch.git'
-        }
 
         licenses {
             license {

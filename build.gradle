@@ -1,13 +1,6 @@
-plugins {
-    id 'pl.allegro.tech.build.axion-release' version '1.4.0'
-}
+apply plugin: 'maven'
 
-scmVersion {
-    tag { prefix = project.name }
-    versionCreator 'versionWithBranch'
-}
-
-project.version = scmVersion.version
+project.version = '2.7.99-SNAPSHOT'
 project.group = 'pl.allegro.tech'
 
 subprojects {
